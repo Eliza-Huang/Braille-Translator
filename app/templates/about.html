@@ -1,0 +1,15 @@
+<!-- about.html-->
+
+{% extends "base.html" %}
+{% block title %}{% endblock %}
+{% block body %}
+<div class="jumbotron">
+  <h1></h1>
+  <p class="lead">{{word}}</p>
+  <img style="width: 100%" src="{{filename}}">
+  <form action="http://127.0.0.1:5000/" method="get">
+    <input type="submit" value="Look At Another Photo!" 
+         name="Submit" id="restart" />
+  </form>
+</div>
+{% endblock %}
